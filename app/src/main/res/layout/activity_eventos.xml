@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:background="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".eventos.EventosActivity"
+    android:background="@drawable/gradient">
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/titleeventos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EVENTOS ATUAIS"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_below="@+id/titulo1"
+                android:textColor="@color/texto_branco"
+                android:textSize="24sp"
+                android:gravity="center"/>
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="40dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/lin1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/texto_branco"
+                    >
+
+                    <TextView
+                        android:id="@+id/titulo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FORMULA TRUCK"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/black_"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/data1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SABADO - DIA 15/01/3018 as 9h"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_below="@+id/titulo1"
+                        android:textColor="@color/black_"/>
+
+                    <!--TextView
+                        android:id="@+id/onde1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ONDE - Parque Redenção"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_below="@+id/horario1"
+                        android:layout_marginTop="5dp"/-->
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/evento1"
+                        android:layout_below="@+id/onde1"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="VER EVENTO"
+                    android:background="@color/yello"
+                    android:layout_below="@+id/lin1"/>
+
+            </RelativeLayout>
+
+            <!--  SEGUNDA LINEAR LIST EVENTO DOIS-->
+            <RelativeLayout
+                android:id="@+id/relative2"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="40dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:background="@color/texto_branco"
+                    >
+
+                    <TextView
+                        android:id="@+id/titulo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FORMULA TRUCK"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/black_"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/data2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SABADO - DIA 15/01/3018 as 9h"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_below="@+id/titulo1"
+                        android:textColor="@color/black_"/>
+
+                    <!--TextView
+                        android:id="@+id/onde2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ONDE - Parque Redenção"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_below="@+id/horario1"
+                        android:layout_marginTop="5dp"/-->
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/evento2"
+                        android:layout_below="@+id/onde1"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="VER EVENTO"
+                    android:background="@color/yello"
+                    android:layout_below="@+id/linear2"/>
+
+            </RelativeLayout>
+
+            <!--  TERCEIRA LINEAR LIST EVENTO TRES-->
+            <RelativeLayout
+                android:id="@+id/relative3"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="40dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:background="@color/texto_branco"
+                    >
+
+                    <TextView
+                        android:id="@+id/titulo3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FORMULA TRUCK"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/black_"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/data3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SABADO - DIA 15/01/3018 as 9h"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_below="@+id/titulo2"
+                        android:textColor="@color/black_"/>
+
+                    <!--TextView
+                        android:id="@+id/onde3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ONDE - Parque Redenção"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_below="@+id/horario2"
+                        android:layout_marginTop="5dp"/-->
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/evento3"
+                        android:layout_below="@+id/onde2"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="VER EVENTO"
+                    android:background="@color/yello"
+                    android:layout_below="@+id/linear3"/>
+
+            </RelativeLayout>
+
+            <!--  QUARTA LINEAR LIST EVENTO -->
+            <RelativeLayout
+                android:id="@+id/relative4"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="40dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linear4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:background="@color/texto_branco"
+                    >
+
+                    <TextView
+                        android:id="@+id/titulo4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FORMULA TRUCK"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/black_"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/data4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SABADO - DIA 15/01/3018 as 9h"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_below="@+id/titulo3"
+                        android:textColor="@color/black_"/>
+
+                    <!--TextView
+                        android:id="@+id/onde4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ONDE - Parque Redenção"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_below="@+id/horario3"
+                        android:layout_marginTop="5dp"/-->
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/evento4"
+                        android:layout_below="@+id/onde3"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="VER EVENTO"
+                    android:background="@color/yello"
+                    android:layout_below="@+id/linear4"/>
+
+            </RelativeLayout>
+
+
+            <!--  CINCO LINEAR LIST EVENTO -->
+            <RelativeLayout
+                android:id="@+id/relative5"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="40dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linear5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:background="@color/texto_branco"
+                    >
+
+                    <TextView
+                        android:id="@+id/titulo5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FORMULA TRUCK"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/black_"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/data5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SABADO - DIA 15/01/3018 as 9h"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_below="@+id/titulo3"
+                        android:textColor="@color/black_"/>
+
+                    <!--TextView
+                        android:id="@+id/onde5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ONDE - Parque Redenção"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_below="@+id/horario3"
+                        android:layout_marginTop="5dp"/-->
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/evento5"
+                        android:layout_below="@+id/onde3"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="VER EVENTO"
+                    android:background="@color/yello"
+                    android:layout_below="@+id/linear5"/>
+
+            </RelativeLayout>
+
+            <!--  SEIS LINEAR LIST EVENTO -->
+            <RelativeLayout
+                android:id="@+id/relative6"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="40dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linear6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:background="@color/texto_branco"
+                    >
+
+                    <TextView
+                        android:id="@+id/titulo6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FORMULA TRUCK"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/black_"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/data6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SABADO - DIA 15/01/3018 as 9h"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_below="@+id/titulo3"
+                        android:textColor="@color/black_"/>
+
+                    <!--TextView
+                        android:id="@+id/onde6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ONDE - Parque Redenção"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_below="@+id/horario3"
+                        android:layout_marginTop="5dp"/-->
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/evento6"
+                        android:layout_below="@+id/onde3"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="VER EVENTO"
+                    android:background="@color/yello"
+                    android:layout_below="@+id/linear6"/>
+
+            </RelativeLayout>
+
+
+            <!--  CINCO LINEAR LIST EVENTO -->
+            <RelativeLayout
+                android:id="@+id/relative7"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="40dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linear7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:background="@color/texto_branco"
+                    >
+
+                    <TextView
+                        android:id="@+id/titulo7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FORMULA TRUCK"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/black_"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/data7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SABADO - DIA 15/01/3018 as 9h"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_below="@+id/titulo7"
+                        android:textColor="@color/black_"/>
+
+                    <!--TextView
+                        android:id="@+id/onde6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ONDE - Parque Redenção"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_below="@+id/horario3"
+                        android:layout_marginTop="5dp"/-->
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/evento7"
+                        android:layout_below="@+id/onde7"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="VER EVENTO"
+                    android:background="@color/yello"
+                    android:layout_below="@+id/linear7"/>
+
+            </RelativeLayout>
+
+
+            <!--  OITO LINEAR LIST EVENTO -->
+            <RelativeLayout
+                android:id="@+id/relative8"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="40dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linear8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:background="@color/texto_branco"
+                    >
+
+                    <TextView
+                        android:id="@+id/titulo8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FORMULA TRUCK"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/black_"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/data8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SABADO - DIA 15/01/3018 as 9h"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_below="@+id/titulo8"
+                        android:textColor="@color/black_"/>
+
+                    <!--TextView
+                        android:id="@+id/onde8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ONDE - Parque Redenção"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_below="@+id/horario3"
+                        android:layout_marginTop="5dp"/-->
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/evento8"
+                        android:layout_below="@+id/onde8"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="VER EVENTO"
+                    android:background="@color/yello"
+                    android:layout_below="@+id/linear8"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
