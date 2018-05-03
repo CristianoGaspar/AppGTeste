@@ -16,6 +16,11 @@
     <color name="black_">#90000000</color>
 
 
+    <!--================  ANUNCIOS  ================  -->
+    <color name="lightgray">#ededed</color>
+    <color name="anuncio_car">#a70911</color>
+
+
 
 
 
